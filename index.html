@@ -1,58 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Engineering Portfolio</title>
   <style>
-    /* Inline CSS for simple styling; you can also create a separate styles.css file */
+    /* Reset default margin for the body */
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+    }
+
+    /* Style for the header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    /* Title/Logo on the left side */
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Navigation container on the right side */
+    nav {
+      display: flex;
+    }
+
+    /* Style for navigation links to look like buttons */
+    nav a {
+      margin-left: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #333;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover effect for buttons */
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Add some spacing so content doesn't hide behind the fixed header */
+    .content {
+      padding-top: 80px;
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
     }
-    header, footer {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+
+    /* Section styles */
     section {
       margin-bottom: 40px;
     }
-    h1, h2 {
+    
+    section h2 {
       color: #333;
     }
   </style>
 </head>
 <body>
+  <!-- Header with navigation -->
   <header>
     <h1>Your Name</h1>
-    <p>Engineering Project Portfolio</p>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <a href="#research">Research Experience</a>
+      <a href="#projects">Highlight Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div>
-      <h3>Project Title 1</h3>
-      <p>Brief description of the project highlighting your role, technologies used, and outcomes.</p>
-      <!-- Add links to live demos or repositories if available -->
-    </div>
-    <!-- Repeat for other projects -->
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>A brief professional bio about your engineering background, skills, and interests.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+  
+  <!-- Main content -->
+  <div class="content">
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>This is where you introduce yourself and your engineering background.</p>
+    </section>
+    
+    <section id="research">
+      <h2>Research Experience</h2>
+      <p>Here, detail your research work, relevant projects, and any publications or accomplishments.</p>
+    </section>
+    
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Showcase your projects with descriptions, images, or even links to GitHub repositories.</p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Include your contact information or a contact form so potential employers can reach you.</p>
+    </section>
+  </div>
 </body>
 </html>
